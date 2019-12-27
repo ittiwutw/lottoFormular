@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defautlHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      HUAY
+    </ion-title>
+    <ion-buttons slot="end">
+      ติดต่อ Admin
+      <img
+        style="height: 50px; padding: 0px !important"
+        src="/assets/icon/line.png"
+      />
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button expand="block" (click)="selectFormular()">ดูสูตร</ion-button>
+  </div>
+  <div >
+    <ion-row>
+      <ion-col size="6" class="ion-text-right">
+        <ion-button shape="round">HUAY</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="round">HUAY VIP</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <br>
+  <div >
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <strong>จับยี่กี Huay 21 ธันวาคม 2562</strong>
+      </ion-col>
+    </ion-row>
+    <ion-grid>
+      <ion-row class="ion-text-center" style="background-color: #3780ff;">
+        <ion-col size="6" style="border: 1px solid #ffff;">
+          รอบ
+        </ion-col>
+        <ion-col size="3" style="border: 1px solid #ffff;">
+          สามตัวบน
+        </ion-col>
+        <ion-col size="3" style="border: 1px solid #ffff;">
+          สองตัวล่าง
+        </ion-col>
+      </ion-row>
+      <div>
+      <ion-row class="ion-text-center" style="" *ngFor="let round of rounds">
+        <ion-col size="6" style="border: 1px solid rgb(94, 93, 93);">
+          รอบที่ {{round}}
+        </ion-col>
+        <ion-col size="3" style="border: 1px solid rgb(94, 93, 93);;">
+          XXX
+        </ion-col>
+        <ion-col size="3" style="border: 1px solid rgb(94, 93, 93);">
+          XX
+        </ion-col>
+      </ion-row>
+    </div>
+    </ion-grid>
+  </div>
+</ion-content>
